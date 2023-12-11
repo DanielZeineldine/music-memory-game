@@ -38,7 +38,7 @@ function startButton() {
     userSequence = [];
 
     function startGame() {
-        remainingTime = 1000 * level + 500;
+        remainingTime = 1000 * level + 1000;
         interval = 1000;
         startNewLevel()
 
