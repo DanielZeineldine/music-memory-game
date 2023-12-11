@@ -196,5 +196,9 @@
 .timer {
     font-family: 'rain strom' ,sans-serif;
     font-size: 1.5rem;
-
+    
+}
+.uwin, .ulose, .wldummy {
+    font-family: 'rain strom' ,sans-serif;
+    font-size: 1.3rem;
 }

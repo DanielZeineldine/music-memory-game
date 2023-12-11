@@ -29,6 +29,7 @@ let userDE = document.querySelector('.userDExist');
 let remainingTime;
 let interval;
 let left = document.querySelector('.left')
+let winLose = document.querySelector('.winLose');
 
 firstDisplay()
 function startButton() {
@@ -50,7 +51,8 @@ function startButton() {
                 clearInterval(timer)
                 checkMemory();
                 if (win === true) {
-                    console.log(winMessage)
+                    // console.log(winMessage)
+                    showYouWin()
                     level++
                     userSequence = [];
                     displayLevel()
@@ -62,7 +64,9 @@ function startButton() {
                     hideRemainingTime()
                     displayLevel()
                     showHscores()
-                    console.log(loseMessage)}
+                    // console.log(loseMessage)
+                    showYouLose()
+                }
             }
         }
         let timer = setInterval(updateTimer, interval)
@@ -71,8 +75,28 @@ function startButton() {
 }
 
 function showYouWin() {
-
+    winLose.innerHTML = ``;
+    winLose.innerHTML = `
+    <p class="uwin">You Win!&#x1F31E</p>
+    `;
+    setTimeout(() => {
+        winLose.innerHTML = `
+        <p class="wldummy text-gray-200">You Win!</p>
+        `;
+    }, 1000);
 }
+function showYouLose() {
+    winLose.innerHTML = ``;
+    winLose.innerHTML = `
+    <p class="ulose">You Lose!</p>
+    `;
+    setTimeout(() => {
+        winLose.innerHTML = `
+        <p class="wldummy text-gray-200">You Win!</p>
+        `;
+    }, 1000);
+}
+
 function showRemainingTime() {
     left.innerHTML = ``;
     left.innerHTML = `
