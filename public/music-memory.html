@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../src/output.css">
+    <!-- <link rel="stylesheet" href="../src/input.css"> -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel=""
+        href="https://fonts.adobe.com/fonts/bd-caramel-variable?vf-instance=Bubble&vf-font-size=100&vf-font=BDCaramel-Variable">
+    <title>Music Memory</title>
+</head>
+
+<body class="bg-gray-200">
+    <!-- !MAIN -->
+    <main class="main bg-gray-200 h-full w-full
+    flex flex-col items-center justify-center">
+        <!-- !REGISTER -->
+        <div class="register-user absolute flex flex-col justify-center items-center mt-16">
+            <div class="absolute top-0 right-0 m-3 cursor-pointer">
+                <img src="files/x.svg" alt="exit" onclick="hideBoth()">
+            </div>
+            <div class="text-white">
+                <p>Welcome Back!!</p>
+            </div>
+            <label for="username"></label>
+            <input class="input mb-2 p-1 bg-slate-300 outline-none" type="text" placeholder="username" name="username" id="username">
+            <div>
+                <p class="userAExist text-red-700 mb-2">User already exists</p>
+            </div>
+            <button class="buttonSub" type="button" id="submit">Sign up</button>
+            <p class="retplayer mt-3 cursor-pointer">Returning Player?</p>
+        </div>
+        <!-- !RETURNING -->
+        <div class="returning-player absolute flex flex-col justify-center items-center mt-16">
+            <div class="absolute top-0 right-0 m-3 cursor-pointer">
+                <img src="files/x.svg" alt="exit" onclick="hideBoth()">
+            </div>
+            <div>
+                <p>Welcome Back!!</p>
+            </div>
+            <label for="username"></label>
+            <input class="input-ret mb-2 p-1 bg-slate-300 outline-none" type="text" placeholder="username" name="username" id="usernameret">
+            <div>
+                <p class="userDExist text-red-700 mb-2">User doesn't exist</p>
+            </div>
+            <button class="buttonSubRet" type="button" id="submitRet">Sign in</button>
+            <p class="newplayer mt-3 cursor-pointer">New Player?</p>
+        </div>
+        
+        <!-- !TITLE -->
+        <div class="h1_div flex justify-center items-center sticky m-4 ">
+            <h1 class="h1 text-5xl">MUSIC MEMORY</h1>
+        </div>
+
+        <div class="left absolute left-10 top-44">
+            
+        </div>
+
+        <div class="game_container w-full h-80 flex justify-center items-center">
+            <div class="centerGame flex flex-col justify-center items-center">
+                <div class="mt-20" id="level-div">
+                    <p class="level text-3xl">LEVEL</p>
+                </div>
+                <div class="tap_container flex flex-wrap justify-center items-center w-80">
+                    <div id="tap1" class="tap tap1 m-4"></div>
+                    <div id="tap2" class="tap tap2 m-4"></div>
+                    <div id="tap3" class="tap tap3 m-4"></div>
+                    <div id="tap4" class="tap tap4 m-4"></div>
+                </div>
+                <div class="button-div">
+                    <button onclick="startButton()" class="button mt-8" type="button">Start</button>
+                </div>
+            </div>
+            <div class="right">
+                <div class="profile_user absolute right-3 top-5 flex gap-2 cursor-pointer">
+                    <div class="userdiv">
+                        <!-- <p class="signin users">Sign in</p> -->
+                    </div>
+                    <img class="profile" src="files/user.svg" alt="profile">
+                </div>
+                <div class="highscores-div absolute top-40 right-5">
+                    <h3 class="highscores">Highscores</h3>
+                    <div class="highscores-table">
+                        <!-- <div class="indHS">
+                            <p class="p">dan 13</p>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>

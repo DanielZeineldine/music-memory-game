@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "frez": "tailwindcss -i ./src/input.css -o ./src/output.css --watch"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.3.6"
+  }
+}
