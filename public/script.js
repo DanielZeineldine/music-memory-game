@@ -88,7 +88,7 @@ function showYouWin() {
 function showYouLose() {
     winLose.innerHTML = ``;
     winLose.innerHTML = `
-    <p class="ulose">You Lose!</p>
+    <p class="ulose">You Lose!&#x1F47B</p>
     `;
     setTimeout(() => {
         winLose.innerHTML = `
