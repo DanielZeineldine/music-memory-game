@@ -1,7 +1,7 @@
 # Memory Game
 
 ## Overview
-***ps: couldn't deploy project because it has tailwind and the html file isn't in the root directory***
+~***ps: couldn't deploy project because it has tailwind and the html file isn't in the root directory***~
 ### Objective
 Challenge your memory with this interactive web-based memory game.
 
