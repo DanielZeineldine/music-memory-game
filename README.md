@@ -7,7 +7,7 @@ Challenge your memory with this interactive web-based memory game.
 
 ### Technologies Used
 
-- **HTML, CSS (including Tailwind), JavaScript:**
+- **HTML, CSS (~including Tailwind~, Removed it), JavaScript:**
   - Built using standard web technologies with the added power and utility of Tailwind CSS.
 
 - **Local Storage:**
