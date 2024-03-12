@@ -8,7 +8,7 @@ Challenge your memory with this interactive web-based memory game.
 ### Technologies Used
 
 - **HTML, CSS (~including Tailwind~, Removed it), JavaScript:**
-  - Built using standard web technologies with the added power and utility of Tailwind CSS.
+  - Built using standard web technologies with the added power and utility of ~Tailwind~ CSS.
 
 - **Local Storage:**
   - Stores and retrieves user data, including highscores and usernames.
@@ -33,9 +33,6 @@ Challenge your memory with this interactive web-based memory game.
 4. **Scoring:**
    - Your highscore is determined by the highest level reached.
 
-5. **View Highscores:**
-   - Click "Highscores" to see top performers.
-
 ## Features
 
 - **User Registration and Login:**
@@ -47,8 +44,8 @@ Challenge your memory with this interactive web-based memory game.
 - **Dynamic Difficulty:**
   - Challenge yourself with increasing difficulty levels.
 
-- **Visual Feedback:**
-  - Colored taps provide visual feedback during gameplay.
+- **Visual and Sound Feedback:**
+  - Colored taps provide visual and sound feedback during gameplay.
 
 - **Time Constraint:**
   - Complete each level within the time limit.
