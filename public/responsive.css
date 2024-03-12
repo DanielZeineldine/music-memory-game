@@ -1,0 +1,280 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "emotional baggage";
+  src: url(files/EmotionalBaggage-Regular.ttf) format(truetype);
+}
+@font-face {
+  font-family: "rain strom";
+  src: url(files/Rain\ Strom.otf) format(opentype);
+}
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+body {
+  background: linear-gradient(
+    -45deg,
+    #f1c40f 0%,
+    #2ecc71 30%,
+    #3498db 60%,
+    #e74c3c 90%,
+    #ff8a00 100%
+  );
+}
+
+.register-user,
+.returning-player {
+  background-color: white;
+  padding: 8rem 5rem;
+  top: 5rem;
+  border-radius: 1rem;
+  display: none;
+}
+/* .returning-player {
+    background-color: white;
+    padding: 8rem 5rem;
+    top: 5rem;
+    border-radius: 1rem;
+    display: none;
+} */
+.input,
+.input-ret {
+  border-radius: 0.5rem;
+}
+
+.game_container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+.centerGame {
+  display: flex;
+}
+.h1_div {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 2rem;
+}
+.h1 {
+  font-family: "emotional baggage", sans-serif;
+  font-weight: 100;
+  text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #364fa1 1%,
+    #44107a 20%,
+    #ff1361 35%,
+    #ffa600 50%,
+    #fff800 69%,
+    #8cffab 80%,
+    #0d457b 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 3s linear infinite;
+  display: inline-block;
+  font-size: 80px;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+.level {
+  font-family: "rain strom", sans-serif;
+  font-weight: 900;
+  margin: 1 rem 0;
+  --tw-bg-opacity: 1;
+  color: rgb(229 231 235 / var(--tw-bg-opacity));
+  /* background-image: linear-gradient(
+        #00CED1 25%,
+        #FF4500 35%,
+        #00BFFF 15%,
+        #8FBC8F 25%
+    ); */
+}
+.tap {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 1rem;
+  /* margin: rem; */
+}
+.tap:hover {
+  /* width: 8.3em;
+    height: 8.3rem; */
+  filter: brightness(0.8);
+  box-shadow: 1px 1px 10px 5px #bdbcbc;
+}
+.tap1 {
+  box-shadow: unset;
+  background-color: #231557;
+}
+.tap2 {
+  box-shadow: unset;
+  background-color: #7d4cd6;
+}
+.tap3 {
+  box-shadow: unset;
+  background-color: #ff1361;
+}
+.tap4 {
+  box-shadow: unset;
+  background-color: #d1b300;
+}
+.button,
+.buttonSub,
+.buttonSubRet {
+  font-family: "rain strom", sans-serif;
+  font-size: 1.5rem;
+  color: black;
+  /* border: 2px solid ; */
+  border-radius: 0.5rem;
+  padding: 0.1rem 1.1rem;
+  outline: none;
+  background-image: linear-gradient(
+    -225deg,
+    #604be6 0%,
+    #6a3f97 30%,
+    #2e70ad 100%
+  );
+}
+.button:hover,
+.buttonSub:hover,
+.buttonSubRet:hover {
+  box-shadow: 1px 1px 10px 5px gray;
+}
+.retplayer,
+.newplayer {
+  font-family: "rain strom", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.retplayer:hover,
+.newplayer:hover {
+  background-image: linear-gradient(
+    -225deg,
+    #231579 10%,
+    #44107a 40%,
+    #0d457b 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.profile_user {
+  border-radius: 0.5rem;
+  padding: 0.3rem 0.5rem;
+  outline: none;
+  background-image: linear-gradient(
+    -225deg,
+    #5f54aa 0%,
+    #8257af 30%,
+    #21619c 100%
+  );
+}
+.users {
+  font-size: 1.3rem;
+  font-family: "rain strom", sans-serif;
+}
+.highscores-div {
+  position: absolute;
+  max-height: 32rem;
+  top: 8rem;
+  border: 3px solid black;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}
+.highscores {
+  font-family: "rain strom", sans-serif;
+  font-size: 1.5rem;
+}
+.highscores-table {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-height: 30rem;
+}
+.indHS {
+  border: 1px solid transparent;
+  border-radius: 0.5rem;
+  padding: 0 0.5rem;
+  background-image: linear-gradient(
+    -225deg,
+    #0e3775 0%,
+    #199da7 30%,
+    #0d7b4d 100%
+  );
+  margin: 0.5rem 0.3rem;
+}
+.indHS .p {
+  font-family: "rain strom", sans-serif;
+  font-size: 1.3rem;
+  letter-spacing: 0.5px;
+  color: #000;
+}
+.userDExist,
+.userAExist {
+  display: none;
+}
+.timer {
+  font-family: "rain strom", sans-serif;
+  font-size: 1.5rem;
+}
+.uwin,
+.ulose,
+.wldummy {
+  font-family: "rain strom", sans-serif;
+  font-size: 1.3rem;
+}
+
+@media screen and (max-width: 500px) {
+  .main {
+    justify-content: start;
+    align-items: start;
+  }
+  .h1_div {
+    position: inherit;
+    width: 80%;
+    justify-content: start;
+  }
+  .h1 {
+    max-width: 90%;
+    font-size: 30px;
+  }
+  .centerGame {
+    margin-top: 1rem;
+  }
+  .tap_container {
+    max-width: 90%;
+  }
+  .right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .right .profile_user {
+    top: 1rem;
+  }
+  .highscores-div {
+    top: 40rem;
+    max-width: 80%;
+  }
+}

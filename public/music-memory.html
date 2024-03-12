@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="./files/frez.svg" />
+    <!-- <link rel="stylesheet" href="../src/output.css"> -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel=""
+        href="https://fonts.adobe.com/fonts/bd-caramel-variable?vf-instance=Bubble&vf-font-size=100&vf-font=BDCaramel-Variable">
+    <title>Music Memory</title>
+</head>
+
+<body class="body">
+    <!-- !MAIN -->
+    <main class="main">
+        <!-- !REGISTER -->
+        <div class="register-user">
+            <div class="ru__img__div">
+                <img src="files/x.svg" alt="exit" onclick="hideBoth()">
+            </div>
+            <div class="welcomeBack">
+                <p>Welcome Back!!</p>
+            </div>
+            <label for="username"></label>
+            <input class="input" type="text" placeholder="username" name="username" id="username">
+            <div>
+                <p class="userAExist">User already exists</p>
+            </div>
+            <button class="buttonSub" type="button" id="submit">Sign up</button>
+            <p class="retplayer">Returning Player?</p>
+        </div>
+        <!-- !RETURNING -->
+        <div class="returning-player">
+            <div class="rp__img__div">
+                <img src="files/x.svg" alt="exit" onclick="hideBoth()">
+            </div>
+            <div>
+                <p>Welcome Back!!</p>
+            </div>
+            <label for="username"></label>
+            <input class="input-ret" type="text" placeholder="username" name="username" id="usernameret">
+            <div>
+                <p class="userDExist">User doesn't exist</p>
+            </div>
+            <button class="buttonSubRet" type="button" id="submitRet">Sign in</button>
+            <p class="newplayer">New Player?</p>
+        </div>
+
+        <!-- !TITLE -->
+        <div class="h1_div">
+            <h1 class="h1">MUSIC MEMORY</h1>
+        </div>
+
+        <div class="left">
+
+        </div>
+
+        <div class="game_container">
+            <div class="centerGame">
+                <div class="winLose">
+                    <p class="wldummy">You Win!</p>
+                </div>
+                <div class="" id="level-div">
+                    <p class="level">LEVEL</p>
+                </div>
+                <div class="tap_container">
+                    <div id="tap1" class="tap tap1">
+                        <audio id="aud1" src="files\Cymatics - Future Bass Kick 2 - E.wav"></audio>
+                    </div>
+                    <div id="tap2" class="tap tap2">
+                        <audio id="aud2" src="../public/files/BEM Clap6.wav"></audio>
+                    </div>
+                    <div id="tap3" class="tap tap3">
+                        <audio id="aud3" src="../public/files/Cosmic's Snare 2.wav"></audio>
+                    </div>
+                    <div id="tap4" class="tap tap4">
+                        <audio id="aud4" src="../public/files/Cosmic's Hi-hat 1.wav"></audio>
+                    </div>
+                </div>
+                <audio id="winsound" src="files/Cosmic's Chant 35.wav"></audio>
+                <audio id="losesound" src="files/mixkit-lose-life-falling-2029.wav"></audio>
+                <div class="button-div">
+                    <button onclick="startButton()" class="button" type="button">Start</button>
+                </div>
+            </div>
+            <div class="right">
+                <div class="profile_user">
+                    <div class="userdiv">
+                        <!-- <p class="signin users">Sign in</p> -->
+                    </div>
+                    <img class="profile" src="files/user.svg" alt="profile">
+                </div>
+                <div class="highscores-div">
+                    <h3 class="highscores">Highscores</h3>
+                    <div class="highscores-table">
+                        <!-- <div class="indHS">
+                            <p class="p">dan 13</p>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
