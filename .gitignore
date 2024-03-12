@@ -1,3 +1,2 @@
-*.json
-tailwind.config.js
+tailwind-old/
 src/
